@@ -56,8 +56,25 @@
     </div>
 
     <form action="#" id="formulario" method="post" novalidate>
-        <fieldsetid>
+        <fieldset>
             <legend>Dados Pessoais</legend>
+            <label for="nome"> Nome Completo </label>
+            <input type="text" name="nome" id="nome" required>
+            <br><br>
+            <label for="CPF">CPF</label>
+            <input type="text" name="CPF" id="CPF" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" aria-describedby="modelo-cpf" inputmode="numeric" >
+            <small id="modelo-cpf">
+                Fomato:000.000.000-00 
+            </small>
+            <br><br>
+            <label for="Email"> Email</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="estado">Estado</label>
+            <input type="text" name="estado" id="estado">
+            <br><br>
+            <label for="cidade">Cidade </label>
+            <input type="text" name="cidade" id="cidade">
 
         </fieldset>
     </form>
